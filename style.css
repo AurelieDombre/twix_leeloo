@@ -153,6 +153,38 @@ button { cursor: pointer; background: none; border: none; }
 .availability-list li { color:rgba(245,240,230,.8); }
 .availability-list li::before { content:'+'; color:hsl(var(--accent)); margin-right:10px; }
 
+.puppies { background:#dfe7df; }
+.puppies-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; margin-top:52px; }
+.puppy-card {
+  background:hsl(var(--card)); border:1px solid rgba(18,37,43,.09);
+  overflow:hidden; transition: transform .35s ease, box-shadow .35s ease;
+}
+.puppy-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.puppy-photo-wrap { position:relative; }
+.puppy-photo { width:100%; height:220px; display:block; object-fit:cover; object-position:50% 40%; }
+.puppy-status {
+  position:absolute; top:14px; right:14px; font-family:var(--app-font-mono);
+  font-size:.64rem; letter-spacing:.11em; text-transform:uppercase;
+  padding:7px 12px; border-radius:999px; color:#fff;
+}
+.puppy-status.available { background: hsl(168 42% 36%); }
+.puppy-status.reserved { background: hsl(var(--accent)); }
+.puppy-info { padding:24px; }
+.puppy-heading { display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+.puppy-name { font-size:1.5rem; margin:0; }
+.puppy-sex { color:hsl(var(--muted-foreground)); white-space:nowrap; }
+.puppy-character { color:hsl(var(--muted-foreground)); line-height:1.55; margin:12px 0 0; min-height:2.8em; }
+.puppy-collar {
+  display:flex; align-items:center; gap:10px; margin-top:18px;
+  padding-top:16px; border-top:1px solid rgba(18,37,43,.12);
+}
+.puppy-collar .mono { color:hsl(var(--muted-foreground)); }
+.collar-dot {
+  width:16px; height:16px; border-radius:50%; flex-shrink:0;
+  border:1px solid rgba(18,37,43,.25);
+}
+.collar-name { color:hsl(var(--primary)); font-weight:500; }
+
 .story-grid { display:grid; grid-template-columns: 0.78fr 1.22fr; gap: 10%; align-items: start; }
 .story-title h2, .section-heading h2 { font-size: clamp(2.8rem, 5.5vw, 5.8rem); line-height: .94; font-weight: 600; margin: 24px 0 0; }
 .story-title h2 em, .section-heading h2 em { color: hsl(var(--accent)); font-style:normal; }
@@ -250,6 +282,7 @@ button { cursor: pointer; background: none; border: none; }
   .commitment-grid { gap:48px; }
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px 220px; }
   .gallery-tile:first-child { grid-column: span 2; grid-row: span 1; }
+  .puppies-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 720px) {
@@ -301,6 +334,8 @@ button { cursor: pointer; background: none; border: none; }
   .intro-band .container { display:block; }
   .intro-band .mono { display:block; margin-top:14px; }
   .parent-grid, .lineage { grid-template-columns:1fr; }
+  .puppies-grid { grid-template-columns:1fr; gap:18px; }
+  .puppy-photo { height:200px; }
   .parent-card { min-height:0; padding:26px; }
   .parent-card h3 { margin-top:48px; }
   .parents::before { display:none; }

@@ -28,7 +28,7 @@
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#parents">Les parents</a>
-        <a href="#disponibilite">Les chiots</a>
+        <a href="#chiots">Les chiots</a>
         <a href="#engagement">L'engagement</a>
         <a href="#contact" class="nav-contact-mobile">Échanger avec nous</a>
       </div>
@@ -98,6 +98,144 @@
           <li>Déparasités</li>
           <li>Socialisés en famille</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ===== Les chiots =====
+    Pour chaque chiot, une fois les infos connues :
+      - Photo      : remplacer src="images/chiot-placeholder.svg" par ex. src="images/chiot-1.jpeg"
+      - Nom        : remplacer le texte dans <h3 class="puppy-name">
+      - Sexe       : remplacer le texte dans <span class="puppy-sex">
+      - Caractère  : remplacer le texte dans <p class="puppy-character">
+      - Statut     : sur <span class="puppy-status ...">, utiliser la classe "available" (disponible, vert)
+                     ou "reserved" (réservé, terracotta) — la couleur suit automatiquement la classe.
+                     Changer aussi le texte affiché ("Disponible" / "Réservé(e)").
+      - Collier    : remplacer la couleur du rond (style="background:#...") et le texte à côté.
+  -->
+  <section class="puppies section-pad" id="chiots">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow mono">La portée</span>
+        <h2 class="display">Six chiots,<br /><em>six personnalités.</em></h2>
+      </div>
+      <div class="puppies-grid">
+
+        <article class="puppy-card reveal">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_vert_fonce.jpg" alt="Photo du chiot collier vert foncé" loading="lazy" />
+            <span class="puppy-status reserved">Réservée</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Betty Boop</h3>
+              <span class="puppy-sex mono">Femelle</span>
+            </div>
+            <p class="puppy-character">Jovial, curieuse mais pas téméraire.</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#074e0a;"></span>
+              <span class="collar-name">Vert</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="puppy-card reveal reveal-delay-1">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_violet.jpg" alt="Photo du chiot collier violet" loading="lazy" />
+            <span class="puppy-status available">Disponible</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Besty</h3>
+              <span class="puppy-sex mono">Femelle</span>
+            </div>
+            <p class="puppy-character">Très joueuse et curieuse et pétillante. Mais aussi très affectueuse.</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#800080;"></span>
+              <span class="collar-name">Violet</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="puppy-card reveal reveal-delay-2">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_bleu.jpg" alt="Photo du chiot collier bleu" loading="lazy" />
+            <span class="puppy-status available">Disponible</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Balou</h3>
+              <span class="puppy-sex mono">Mâle</span>
+            </div>
+            <p class="puppy-character">Un pépère tranquille et affectueux. Très joueur et curieux.</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#0000ff;"></span>
+              <span class="collar-name">Bleu</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="puppy-card reveal">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_orange.jpg" alt="Photo du chiot collier orange" loading="lazy" />
+            <span class="puppy-status available">Disponible</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Bounty</h3>
+              <span class="puppy-sex mono">Mâle</span>
+            </div>
+            <p class="puppy-character">Très curieux et très joueur, il aime beaucoup découvrir. Mais aussi très affectueux</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#ff8c00;"></span>
+              <span class="collar-name">orange</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="puppy-card reveal reveal-delay-1">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_vert_claire.jpg" alt="Photo du chiot collier vert fluo" loading="lazy" />
+            <span class="puppy-status available">Disponible</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Bandit</h3>
+              <span class="puppy-sex mono">Mâle</span>
+            </div>
+            <p class="puppy-character">Malin, joueur et curieux. Mais aussi très affectueux.</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#0eea0e;"></span>
+              <span class="collar-name">Vert fluo</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="puppy-card reveal reveal-delay-2">
+          <div class="puppy-photo-wrap">
+            <img class="puppy-photo" src="images/collier_marron.jpg" alt="Photo du chiot collier marron" loading="lazy" />
+            <span class="puppy-status available">Disponible</span>
+          </div>
+          <div class="puppy-info">
+            <div class="puppy-heading">
+              <h3 class="puppy-name">Buddy</h3>
+              <span class="puppy-sex mono">Mâle</span>
+            </div>
+            <p class="puppy-character">Très joueur et curieux, caractère tranquille, sage. Mais aussi très affectueux.</p>
+            <div class="puppy-collar">
+              <span class="mono">Collier</span>
+              <span class="collar-dot" style="background:#8b4513;"></span>
+              <span class="collar-name">Marron</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
